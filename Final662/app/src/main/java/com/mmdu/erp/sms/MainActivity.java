@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         else
         {
 
-            Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:mmduattendanceportalfeedback@gmail.com"));
+            Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto: //address email"));
             intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback");
             try {
                 startActivity(intent);
@@ -312,7 +312,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         @Override
         protected String doInBackground(String... params) {
 
-            String Reg_url ="http://14.139.236.66:8001/CSEP/DetailedView.php";
+            String Reg_url =""; //address of the server
             try {
                 PreferenceManager preferenceManager = PreferenceManager.getPreferenceManagerInstance(MainActivity.this);
                 String[] data = preferenceManager.getDataFromSharedPreferences();
@@ -394,7 +394,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         @Override
         protected String doInBackground(String... params) {
-            String Reg_url = "http://14.139.236.66:8001/CSEP/Prediction.php";
+            String Reg_url = ""; //address of the server
             try {
                 PreferenceManager preferenceManager = PreferenceManager.getPreferenceManagerInstance(MainActivity.this);
                 String[] data = preferenceManager.getDataFromSharedPreferences();
@@ -475,7 +475,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         @Override
         protected String doInBackground(String... params) {
-            String Reg_url = "http://14.139.236.66:8001/CSEP/LogiDetailsPersonalDetails.php";
+            String Reg_url = ""; //address of the server
             try {
                 PreferenceManager preferenceManager = PreferenceManager.getPreferenceManagerInstance(MainActivity.this);
                 String[] data = preferenceManager.getDataFromSharedPreferences();

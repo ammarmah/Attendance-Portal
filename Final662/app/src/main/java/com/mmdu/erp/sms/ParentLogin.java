@@ -138,7 +138,7 @@ public class ParentLogin extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... params) {
-            String Reg_url = "http://14.139.236.66:8001/CSEP/LoginDetails.php";
+            String Reg_url = ""; //adddress of the server
             try {
                 String rollNumber = params[0];
                 String line_prediction = null;

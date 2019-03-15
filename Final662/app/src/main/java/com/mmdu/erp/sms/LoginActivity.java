@@ -164,7 +164,7 @@ public class LoginActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... params) {
-            String Reg_url = "http://14.139.236.66:8001/CSEP/LoginDetails.php";
+            String Reg_url = ""; //address of server
             try {
 
                 new URL("https://www.sms.mmumullana.org/").openConnection();

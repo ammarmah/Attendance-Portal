@@ -112,7 +112,7 @@ public class MainActivityForCalendarView extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... params) {
-            String Reg_url ="http://14.139.236.66:8001/CSEP/CalendarView.php";
+            String Reg_url ="";
             try {
                 String rollNumber = params[0];
                 String date = params[1];
